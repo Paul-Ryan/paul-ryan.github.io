@@ -1,0 +1,130 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.project-container {
+  width: 100%;
+  height: 400px; }
+
+.project {
+  width: 100%;
+  object-fit: cover; }
+
+nav {
+  height: 80px;
+  padding: 0 50px;
+  background-color: #040404;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000; }
+  nav li {
+    font-size: 16px; }
+  nav ul a:hover {
+    text-decoration: underline; }
+  nav .logo {
+    padding-top: 0; }
+
+body {
+  font-family: "Open Sans", sans-serif; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: "Open Sans", sans-serif; }
+  body h1 {
+    font-size: 30px;
+    padding-top: 30px;
+    text-align: center; }
+  body h2 {
+    font-size: 24px;
+    margin: 20px auto;
+    text-align: center; }
+  body h3 {
+    font-size: 18px; }
+  body p, body li, body a {
+    font-size: 16px; }
+
+header {
+  height: 80vh;
+  margin-top: 80px;
+  background-image: url("images/header_bg.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #EBEBD3; }
+  header h1 {
+    font-size: 300%;
+    margin: 10px 0;
+    text-shadow: 2px 2px 3px #040404; }
+  header h3 {
+    font-size: 200%;
+    text-shadow: 2px 2px 3px #040404; }
+
+#technologies {
+  background-color: #FDFFFC; }
+  #technologies i {
+    font-size: 100px;
+    margin-bottom: 25px; }
+  #technologies .col {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+#about {
+  background-color: #235789; }
+  #about .me {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 50%; }
+
+#portfolio {
+  background-color: #FDFFFC; }
+
+#contact {
+  height: 180px;
+  background-color: #235789; }
+
+/*# sourceMappingURL=style.css.map */

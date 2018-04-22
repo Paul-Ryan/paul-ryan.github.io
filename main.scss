@@ -1,0 +1,122 @@
+@import 'partials/reset';
+@import 'partials/portfolio';
+
+// sass --watch main.scss:style.css
+
+$primary_color: #235789;
+$secondary_color: #083D77;
+$thirdinary_color: #FDFFFC;
+$off_white: #EBEBD3;
+$off_black: #040404;
+
+$primary_font: 'Open Sans', sans-serif;
+$header_font: 'Open Sans', sans-serif;
+
+nav {
+  height: 80px;
+  padding: 0 50px;
+  background-color: $off_black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+
+  li {
+    font-size: 16px;
+  }
+
+  ul a:hover {
+    text-decoration: underline;
+  }
+
+  .logo {
+    padding-top: 0;
+  }
+}
+
+body {
+  font-family: $primary_font;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $header_font;
+  }
+
+  h1 {
+    font-size: 30px;
+    padding-top: 30px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 24px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  h3 {
+    font-size: 18px;
+  }
+
+  p, li, a {
+    font-size: 16px;
+  }
+}
+
+header {
+  height: 80vh;
+  margin-top: 80px;
+  background-image: url("images/header_bg.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $off_white;
+
+  h1 {
+    font-size: 300%;
+    margin: 10px 0;
+    text-shadow: 2px 2px 3px $off_black;
+  }
+
+  h3 {
+    font-size: 200%;
+    text-shadow: 2px 2px 3px $off_black;
+  }
+}
+
+#technologies {
+  background-color: $thirdinary_color;
+  i {
+    font-size: 100px;
+    margin-bottom: 25px;
+  }
+  .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#about {
+  background-color: $primary_color;
+
+  .me {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 50%;
+  }
+}
+
+#portfolio {
+  background-color: $thirdinary_color;
+
+}
+
+#contact {
+  height: 180px;
+  background-color: $primary_color;
+
+}

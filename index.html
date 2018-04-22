@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Paul's Personal Site</title>
+    <link href="https://fonts.googleapis.com/css?family=Karma|Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.polyfills.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <nav>
+      <h1 class="logo">Paul Ryan</h1>
+      <ul>
+        <li><a data-scroll href="#welcome">Welcome</a></li>
+        <li><a data-scroll href="#technologies">Technologies</a></li>
+        <!-- <li><a data-scroll href="#about">About</a></li> -->
+        <li><a data-scroll href="#portfolio">Portfolio</a></li>
+        <li><a data-scroll href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <header id="welcome">
+      <div class="row">
+          <div class="col s12 m7">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="images/me.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <h2 class="header">This is me!</h2>
+                  <p>I am a good web developer. I have experience working on small design teams and delivering code that hits deadlines.</p>
+                </div>
+                  <div class="card-action">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="card blue-grey darken-1">
+          </div> -->
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Technologies</h2>
+        <section id="technologies" class="section">
+          <div class="row">
+            <div class="col s6 m6 l2">
+              <i class="devicon-javascript-plain"></i>
+            </div>
+            <div class="col s6 m6 l2 offset-l3">
+              <i class="devicon-ruby-plain-wordmark"></i>
+            </div>
+            <div class="col s6 m6 l2 offset-l3">
+              <i class="devicon-react-original-wordmark"></i>
+            </div>
+            <div class="col s6 m6 l2">
+              <i class="devicon-html5-plain"></i>
+            </div>
+            <div class="col s6 m6 l2 offset-l3">
+              <i class="devicon-css3-plain"></i>
+            </div>
+            <div class="col s6 m6 l2 offset-l3">
+              <i class="devicon-sass-original"></i>
+            </div>
+          </div>
+
+          <div class="divider" id="portfolio"></div>
+
+        </section>
+
+        <!-- <section id="about" class="section">
+          <h1>About</h1>
+          <div class="container">
+
+            <div class="col s12 m7">
+              <div class="card horizontal">
+                <div class="card-image">
+                  <img src="images/me.jpg">
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content">
+                    <h2 class="header">This is me!</h2>
+                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                  </div>
+                    <div class="card-action">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </section> -->
+
+        <div class="divider" id="portfolio"></div>
+        <h1>Portfolio</h1>
+        <div class="divider" id="portfolio"></div>
+        <section class="section">
+
+          <div class="row">
+            <div class="col s12 m5">
+              <div class="card medium">
+                <div class="card-image">
+                  <img src="images/catstarter_card.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title">Catstarter</span>
+                  <p>Catstarter is a Kickstarter clone. It allows users to create projects seeking funding, or to fund other users' projects and receive rewards. It's built with a Rails/PostgreSQL backend and utilizes a React/Redux frontend.</p>
+                </div>
+                <div class="card-action">
+                  <a href="https://catstarter.herokuapp.com/#/">Live version</a>
+                  <a href="https://github.com/Paul-Ryan/catstarter">On Github</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col s12 m5 offset-m2">
+              <div class="card medium">
+                <div class="card-image">
+                  <img src="images/golfout_card.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title">GolfOut</span>
+                  <p>GolfOut is a game based loosely on the classic Atari game Breakout. It's an exploration of a traditional game genre with my own personal twist. It was created using JavaScript and HTML Canvas.</p>
+                </div>
+                <div class="card-action">
+                  <a href="https://paul-ryan.github.io/golfout/">Live version</a>
+                  <a href="https://github.com/Paul-Ryan/golfout">On Github</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </div>
+
+      <section id="contact" class="section">
+        <h1>Contact</h1>
+      </section>
+    </main>
+
+    <script>
+    	var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+  </body>
+</html>
