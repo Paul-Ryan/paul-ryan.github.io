@@ -2,55 +2,54 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Paul's Personal Site</title>
+    <title>Paul's Website</title>
+
     <link href="https://fonts.googleapis.com/css?family=Karma|Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.polyfills.min.js"></script>
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.polyfills.min.js"></script>
+    <script type="text/javascript" src="js/fontawesome-all.min.js"></script>
+
+
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <nav>
+    <nav id="navigation">
       <h1 class="logo">Paul Ryan</h1>
       <ul>
         <li><a data-scroll href="#welcome">Welcome</a></li>
         <li><a data-scroll href="#technologies">Technologies</a></li>
-        <!-- <li><a data-scroll href="#about">About</a></li> -->
         <li><a data-scroll href="#portfolio">Portfolio</a></li>
-        <li><a data-scroll href="#contact">Contact</a></li>
+        <li><a data-scroll href="#footer">Contact</a></li>
+        <li><a href="resume.pdf">Resume (PDF)</a></li>
       </ul>
     </nav>
-    <header id="welcome">
-      <div class="row">
-          <div class="col s12 m7">
-            <div class="card horizontal">
-              <div class="card-image">
-                <img src="images/me.jpg">
-              </div>
-              <div class="card-stacked">
-                <div class="card-content">
-                  <h2 class="header">This is me!</h2>
-                  <p>I am a good web developer. I have experience working on small design teams and delivering code that hits deadlines.</p>
+
+      <header id="welcome">
+        <div class="row">
+                <div class="col s12 m3 offset-m1">
+                  <img class="header-image" src="images/me.jpg">
                 </div>
-                  <div class="card-action">
+                  <div class="header-content col s12 m6 offset-m1">
+                    <h2 class="header">Hi. I'm <span class="bold">Paul</span>.</h2>
+                    <p>I am a good <span class="bold">web developer</span>. I have experience working on small design teams and delivering code that hits deadlines.</p>
+                    <p>I'm currently seeking new opportunites to futher my career and experience as an engineer.</p>
+                  </div>
                 </div>
-              </div>
-            </div>
           </div>
-          <!-- <div class="card blue-grey darken-1">
-          </div> -->
         </div>
-      </div>
-    </header>
+      </header>
+
     <main>
       <div class="container">
-        <h1>Technologies</h2>
-        <section id="technologies" class="section">
-          <div class="row">
+        <h1 id="technologies">Technologies</h2>
+        <section class="section">
+          <div class="row tech">
             <div class="col s6 m6 l2">
               <i class="devicon-javascript-plain"></i>
             </div>
@@ -69,9 +68,16 @@
             <div class="col s6 m6 l2 offset-l3">
               <i class="devicon-sass-original"></i>
             </div>
+            <div class="col s6 m6 l2">
+              <i class="devicon-rails-plain"></i>
+            </div>
+            <div class="col s6 m6 l2 offset-l3">
+              <i class="devicon-git-plain"></i>
+            </div>
+            <div class="col s6 m6 l2 offset-l3">
+              <i class="devicon-postgresql-plain"></i>
+            </div>
           </div>
-
-          <div class="divider" id="portfolio"></div>
 
         </section>
 
@@ -97,14 +103,12 @@
 
         </section> -->
 
-        <div class="divider" id="portfolio"></div>
-        <h1>Portfolio</h1>
-        <div class="divider" id="portfolio"></div>
-        <section class="section">
+        <h1 id="portfolio">Portfolio</h1>
+        <section class="section portfolio">
 
           <div class="row">
             <div class="col s12 m5">
-              <div class="card medium">
+              <div class="card large">
                 <div class="card-image">
                   <img src="images/catstarter_card.png">
                 </div>
@@ -113,14 +117,14 @@
                   <p>Catstarter is a Kickstarter clone. It allows users to create projects seeking funding, or to fund other users' projects and receive rewards. It's built with a Rails/PostgreSQL backend and utilizes a React/Redux frontend.</p>
                 </div>
                 <div class="card-action">
-                  <a href="https://catstarter.herokuapp.com/#/">Live version</a>
-                  <a href="https://github.com/Paul-Ryan/catstarter">On Github</a>
+                  <a href="https://catstarter.herokuapp.com/#/">Live</a>
+                  <a href="https://github.com/Paul-Ryan/catstarter">Repo</a>
                 </div>
               </div>
             </div>
 
             <div class="col s12 m5 offset-m2">
-              <div class="card medium">
+              <div class="card large">
                 <div class="card-image">
                   <img src="images/golfout_card.png">
                 </div>
@@ -129,18 +133,34 @@
                   <p>GolfOut is a game based loosely on the classic Atari game Breakout. It's an exploration of a traditional game genre with my own personal twist. It was created using JavaScript and HTML Canvas.</p>
                 </div>
                 <div class="card-action">
-                  <a href="https://paul-ryan.github.io/golfout/">Live version</a>
-                  <a href="https://github.com/Paul-Ryan/golfout">On Github</a>
+                  <a href="https://paul-ryan.github.io/golfout/">Live</a>
+                  <a href="https://github.com/Paul-Ryan/golfout">Repo</a>
                 </div>
               </div>
             </div>
           </div>
-
         </section>
       </div>
 
-      <section id="contact" class="section">
-        <h1>Contact</h1>
+      <section id="footer" class="section">
+
+        <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l4 s 12">
+                <p><i class="fas fa-mobile-alt"></i><span class="bullet">&#8226</span> (510) 734-0676</p>
+                <p><i class="fas fa-envelope-square"></i><span class="bullet">&#8226</span> paul.ryan.iii@gmail.com</p>
+              </div>
+              <div class="col l2 s12 offset-l6">
+                <ul class="footer-icons">
+                  <li><a href="https://github.com/Paul-Ryan"><i class="devicon-github-plain colored"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/paul-ryan-12a5932a/"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+
       </section>
     </main>
 

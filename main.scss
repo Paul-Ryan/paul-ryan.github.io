@@ -8,6 +8,7 @@ $secondary_color: #083D77;
 $thirdinary_color: #FDFFFC;
 $off_white: #EBEBD3;
 $off_black: #040404;
+$prime_gray: #2D3A3A;
 
 $primary_font: 'Open Sans', sans-serif;
 $header_font: 'Open Sans', sans-serif;
@@ -19,7 +20,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+  // position: fixed;
   top: 0;
   left: 0;
   z-index: 10000;
@@ -33,12 +34,20 @@ nav {
   }
 
   .logo {
-    padding-top: 0;
+    min-width: 160px;
+    padding-top: 20px;
+  }
+
+  ul {
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
 }
 
 body {
   font-family: $primary_font;
+  background: $off_white;
 
   h1, h2, h3, h4, h5, h6 {
     font-family: $header_font;
@@ -46,13 +55,12 @@ body {
 
   h1 {
     font-size: 30px;
-    padding-top: 30px;
+    padding: 30px 0 15px;
     text-align: center;
   }
   h2 {
     font-size: 24px;
     margin: 20px auto;
-    text-align: center;
   }
   h3 {
     font-size: 18px;
@@ -60,19 +68,20 @@ body {
 
   p, li, a {
     font-size: 16px;
+    line-height: 24px;
+    margin-top: 5px;
+  }
+
+  span.bold {
+    font-weight: 700;
   }
 }
 
 header {
-  height: 80vh;
-  margin-top: 80px;
-  background-image: url("images/header_bg.jpg");
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: $off_white;
+  // height: 60vh;
+  color: $off_black;
+  padding: 80px 0;
+  background: $primary_color;
 
   h1 {
     font-size: 300%;
@@ -80,14 +89,26 @@ header {
     text-shadow: 2px 2px 3px $off_black;
   }
 
+  h2 {
+    font-size: 40px;
+
+    .bold {
+      font-weight: 700;
+    }
+  }
+
   h3 {
     font-size: 200%;
     text-shadow: 2px 2px 3px $off_black;
   }
+
+  .header-image {
+    width: 100%;
+    border-radius: 50%;
+  }
 }
 
-#technologies {
-  background-color: $thirdinary_color;
+.tech {
   i {
     font-size: 100px;
     margin-bottom: 25px;
@@ -110,13 +131,46 @@ header {
   }
 }
 
-#portfolio {
-  background-color: $thirdinary_color;
-
-}
-
 #contact {
   height: 180px;
   background-color: $primary_color;
 
+}
+
+#footer {
+  background-color: $primary_color;
+}
+
+.page-footer {
+  background: $primary_color;
+
+  p {
+    color: $off_white;
+  }
+
+  .bullet {
+    margin-left: 5px;
+  }
+
+  ul.footer-icons {
+    background: $primary_color;
+    display: flex;
+    justify-content: flex-start;
+
+    li {
+      font-size: 20px;
+      color: $off_white;
+      background: $primary_color;
+      margin: 0 30px 0 0;
+    }
+
+    i {
+      color: $off_white;
+      font-size: 50px;
+    }
+  }
+  .footer-icons li a {
+    font-size: 50px;
+    color: $off_white;
+  }
 }

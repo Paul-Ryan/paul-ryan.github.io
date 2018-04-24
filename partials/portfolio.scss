@@ -3,7 +3,22 @@
   height: 400px;
 }
 
-.project {
-  width: 100%; 
-  object-fit: cover;
+// .project {
+//   width: 100%;
+//   object-fit: cover;
+//
+//   .card-content {
+//     border-top: 1px solid $prime_gray;
+//     overflow: visible;
+//   }
+// }
+.portfolio {
+
+  .card.large {
+
+    .card-content {
+      border-top: 1px solid #2D3A3A;
+      overflow: visible;
+    }
+  }
 }
