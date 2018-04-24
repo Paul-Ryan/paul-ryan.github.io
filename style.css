@@ -143,6 +143,9 @@ header {
     background: #235789;
     display: flex;
     justify-content: flex-start; }
+    @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+      .page-footer ul.footer-icons {
+        margin: 20px 0; } }
     .page-footer ul.footer-icons li {
       font-size: 20px;
       color: #EBEBD3;
