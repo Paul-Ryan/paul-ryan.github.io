@@ -23,7 +23,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // position: fixed;
   top: 0;
   left: 0;
   z-index: 10000;
@@ -81,7 +80,6 @@ body {
 }
 
 header {
-  // height: 60vh;
   color: $off_black;
   padding: 80px 0;
   background: $primary_color;
@@ -168,4 +166,15 @@ header {
     font-size: 50px;
     color: $off_white;
   }
+}
+
+.tech {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.center-header {
+  display: flex;
+  justify-content: center;
 }
