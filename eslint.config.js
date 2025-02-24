@@ -12,5 +12,12 @@ export default [
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   pluginReact.configs.flat.jsxRuntime,
-  eslintConfigPrettier,
+  eslintConfigPrettier, 
+  eslintConfigPrettier.configs.recommended,
+  eslintConfigPrettier.configs.recommendedTypescript,
+  eslintConfigPrettier.configs.recommendedReact,
+  eslintConfigPrettier.configs.recommendedReactTypescript,
+  eslintConfigPrettier.configs.recommendedJsxRuntime,
+  eslintConfigPrettier.configs.recommendedReactJsxRuntime,
+  eslintConfigPrettier.configs.recommendedReactTypescriptJsxRuntime,
 ];

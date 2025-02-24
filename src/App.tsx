@@ -1,35 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const startDate = new Date("2018-06-01");
+  const currentDate = new Date();
+  const xYearsExperience = `${currentDate.getFullYear() - startDate.getFullYear()} years experience`;
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="mx-auto flex max-w-sm items-center gap-x-4 rounded-xl bg-white p-6 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10">
+        <div>
+          <div className="text-xl font-medium text-black dark:text-white">
+            Paul Ryan
+          </div>
+          <p className="text-gray-500 dark:text-gray-400">
+            <p>Hello.</p>
+            <p>
+              I’m Paul, a web developer focused on frontend development with{" "}
+              {xYearsExperience}. I’ve spent the last few years working on
+              small, motivated teams to create useful products with thoughtful
+              user interfaces.
+            </p>
+
+            <p>
+              These are the technologies I’ve been working with lately, but I’m
+              very capable of picking up new skills depending on the
+              circumstances and product requirements.
+            </p>
+
+            <p>
+              Here are a few of the projects I’ve been working on my own. I also
+              have plenty of experience working on corporate products, but I
+              hope these examples give you a little bit of an idea about what I
+              find interesting and cool.
+            </p>
+          </p>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
