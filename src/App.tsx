@@ -14,7 +14,7 @@ function App() {
         </section>
         <section className="mt-2 flex flex-col justify-center border-t-2 p-2 sm:mt-0 sm:grow-1 sm:border-t-0 sm:p-4 sm:pt-0">
           <h1>
-            <a href="https:pauls-movie-list.com" rel="noopener noreferrer">
+            <a href="https://pauls-movie-list.com" rel="noopener noreferrer">
               Paul&apos;s Movie List
             </a>
           </h1>
