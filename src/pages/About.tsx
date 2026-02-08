@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <div className="flex h-screen flex-col p-4 sm:p-8">
+    <div className="flex h-screen animate-fade-in flex-col p-4 sm:p-8">
       <nav>
         <Link to="/">&larr; Home</Link>
       </nav>

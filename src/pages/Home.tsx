@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="flex h-screen flex-col justify-center align-middle">
+    <div className="flex h-screen animate-fade-in flex-col justify-center align-middle">
       <div className="flex max-w-4xl grow flex-col sm:flex-row">
         <section className="flex flex-col justify-center p-2 sm:grow-1 sm:p-4">
           <h1>
