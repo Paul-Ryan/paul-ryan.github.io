@@ -21,6 +21,10 @@ function Home() {
               Paul&apos;s Movie List
             </a>
           </h1>
+          {/* Separate repo served by GitHub Pages, so a react-router Link would miss it */}
+          <h1 className="mt-4">
+            <a href="/d2r-sorc-build/">D2R Sorceress Guide</a>
+          </h1>
         </section>
       </div>
       <footer className="flex gap-4 self-end justify-self-end p-4">
