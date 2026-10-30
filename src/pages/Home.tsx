@@ -17,13 +17,19 @@ function Home() {
         </section>
         <section className="mt-2 flex flex-col justify-center border-t-2 p-2 sm:mt-0 sm:grow-1 sm:border-t-0 sm:p-4 sm:pt-0">
           <h1>
-            <a href="https://pauls-movie-list.com" rel="noopener noreferrer">
+            <a
+              href="https://pauls-movie-list.com"
+              rel="noopener noreferrer"
+              className="project-link"
+            >
               Paul&apos;s Movie List
             </a>
           </h1>
           {/* Separate repo served by GitHub Pages, so a react-router Link would miss it */}
           <h1 className="mt-4">
-            <a href="/d2r-sorc-build/">D2R Sorceress Guide</a>
+            <a href="/d2r-sorc-build/" className="project-link">
+              D2R Sorceress Guide
+            </a>
           </h1>
         </section>
       </div>
