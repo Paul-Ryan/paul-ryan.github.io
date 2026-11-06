@@ -22,8 +22,9 @@ function About() {
           to keep track of them.
         </p>
         <div className="mt-8 flex gap-4">
+          <Link to="/resume">resume</Link>
           <a
-            href="https://www.linkedin.com/in/paul-ryan-12a5932a/"
+            href="https://www.linkedin.com/in/paul-ryan-online/"
             rel="noopener noreferrer"
           >
             linkedin

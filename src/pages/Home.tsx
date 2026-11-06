@@ -14,6 +14,9 @@ function Home() {
           <Link to="/about" className="mt-4 text-sm">
             About me &rarr;
           </Link>
+          <Link to="/resume" className="mt-1 text-sm">
+            Resume &rarr;
+          </Link>
         </section>
         <section className="mt-2 flex flex-col justify-center border-t-2 p-2 sm:mt-0 sm:grow-1 sm:border-t-0 sm:p-4 sm:pt-0">
           <h1>
@@ -35,7 +38,7 @@ function Home() {
       </div>
       <footer className="flex gap-4 self-end justify-self-end p-4">
         <a
-          href="https://www.linkedin.com/in/paul-ryan-12a5932a/"
+          href="https://www.linkedin.com/in/paul-ryan-online/"
           rel="noopener noreferrer"
         >
           linkedin
